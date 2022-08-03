@@ -16,14 +16,18 @@ import org.bukkit.inventory.meta.ItemMeta;
 // colored text import 
 // import org.bukkit.ChatColor;
 
-
+// Mob imports
+// change {mob} with mob name
+// import org.bukkit.entity.{mob};
 public class Func {
 	public void test(Entity killer) {
 
 		// Gets Player Inventory
-		PlayerInventory invent = ((Player) killer).getInventory();
+		PlayerInventory inventory = ((Player) killer).getInventory();
 			  
 		// Creates Item and gets item meta.
+
+		// to change the item, use "Material.ITEM/BLOCK_NAME_IN_CAPS"
 		ItemStack item = new ItemStack(Material.GRASS_BLOCK);
 		ItemMeta item_meta = item.getItemMeta();
 			  
@@ -33,7 +37,7 @@ public class Func {
 		// you can add any enchantment you want.
 		// just uncomment the line below.
 		
-		//meta_core.addEnchant(Enchantment.DAMAGE_ALL, 1, true);
+		// item_meta.addEnchant(Enchantment.DAMAGE_ALL, 1, true);
 			  
 		// lore list (secretly string list)
 		ArrayList<String> loreList = new ArrayList<String>();
@@ -48,7 +52,7 @@ public class Func {
 		item.setItemMeta(item_meta);
 			  
 		// Adds item to inventory.
-		invent.addItem(item);
+		inventory.addItem(item);
 	}
 	
 }
