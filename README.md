@@ -1,2 +1,2 @@
-# RandomChance
- A Random Chance Plugin For Spigot / Bukkit
+# RandomDropChance
+ A Random Drop Chance Plugin For Spigot / Bukkit
